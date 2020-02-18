@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import GenreCard from '../../components/GenreCard';
 
 const GenrePage = (props) => {
-  const { songsList, setSongsOfGenre } = props;
+  const {
+    songsList, setSongsOfGenre, setIsGenreClicked, setGenre,
+  } = props;
   const getSongs = (genre) => {
-    console.log(genre);
     const genreSongs = songsList.filter((song) => {
       const { genres } = song;
       if (genres.indexOf(genre) !== -1) {
@@ -14,6 +15,8 @@ const GenrePage = (props) => {
       return false;
     });
     setSongsOfGenre(genreSongs);
+    setIsGenreClicked(true);
+    setGenre(genre);
   };
   //   const genres = genreList.map((genre) => (
   //     <GenreCard name={genre} imageLink="" getSongs={getSongs} />
