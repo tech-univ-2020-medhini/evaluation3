@@ -3,19 +3,16 @@
 exports[`the genre cards should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="GenreCard"
+    class="genre-card"
   >
     <img
       alt="/"
     />
-    <div
+    <button
       class="Button"
-    >
-      <button
-        data-testid="test-btn"
-        type="button"
-      />
-    </div>
+      data-testid="test-btn"
+      type="button"
+    />
   </div>
 </DocumentFragment>
 `;

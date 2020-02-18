@@ -3,23 +3,20 @@
 exports[`the song cards should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="SongCard"
+    class="song-card"
   >
     <img
       alt="/"
     />
     <p />
-    <b />
-    <div
+    <p />
+    <button
       class="Button"
+      data-testid="test-btn"
+      type="button"
     >
-      <button
-        data-testid="test-btn"
-        type="button"
-      >
-        0
-      </button>
-    </div>
+      0
+    </button>
   </div>
 </DocumentFragment>
 `;

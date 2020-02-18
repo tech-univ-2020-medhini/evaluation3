@@ -11,16 +11,13 @@ exports[`the homepage container should render correctly 1`] = `
     <p>
       Seems a bit empty in here
     </p>
-    <div
+    <button
       class="Button"
+      data-testid="test-btn"
+      type="button"
     >
-      <button
-        data-testid="test-btn"
-        type="button"
-      >
-        sync
-      </button>
-    </div>
+      sync
+    </button>
   </div>
 </DocumentFragment>
 `;

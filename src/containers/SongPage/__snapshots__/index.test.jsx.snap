@@ -7,7 +7,7 @@ exports[`the songpage container should render correctly 1`] = `
   >
     <p />
     <div
-      class="Songs-container"
+      class="songs-container"
     />
   </div>
 </DocumentFragment>
