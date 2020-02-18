@@ -6,11 +6,11 @@ const Button = (props) => {
   const { text, click } = props;
 
   return (
-    <div className="Button">
-      <button data-testid="test-btn" onClick={click} type="button">
-        {text}
-      </button>
-    </div>
+  // <div className="Button">
+    <button className="Button" data-testid="test-btn" onClick={click} type="button">
+      {text}
+    </button>
+  // </div>
   );
 };
 Button.propTypes = {
