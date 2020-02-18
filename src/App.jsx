@@ -12,7 +12,12 @@ function App() {
   const [songsOfGenre, setSongsOfGenre] = useState([]);
   return (
     <div className="App">
-      <header className="header" />
+      <div className="header">
+        My
+        {' '}
+        <b>  Record </b>
+        Shelf
+      </div>
       <div className="body">
         {
           // eslint-disable-next-line
