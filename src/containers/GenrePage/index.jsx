@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GenreCard from '../../components/GenreCard';
+import './index.css';
 
 const GenrePage = (props) => {
   const {
@@ -23,11 +24,11 @@ const GenrePage = (props) => {
   //   ));
 
   return (
-    <div className="Genre-page">
+    <div className="genre-page">
       <p>
         Genres
       </p>
-      <div className="Genre-container">
+      <div className="genre-container">
         <GenreCard name="rock" getSongs={() => getSongs('rock')} />
         <GenreCard name="pop" getSongs={() => getSongs('pop')} />
         <GenreCard name="bollywood" getSongs={() => getSongs('bollywood')} />
