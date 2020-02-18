@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the homepage container should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="HomePage"
+  >
+    <p>
+      :((
+    </p>
+    <p>
+      Seems a bit empty in here
+    </p>
+    <div
+      class="Button"
+    >
+      <button
+        data-testid="test-btn"
+        type="button"
+      >
+        sync
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

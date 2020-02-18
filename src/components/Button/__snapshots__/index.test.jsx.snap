@@ -2,9 +2,13 @@
 
 exports[`the button component should render correctly 1`] = `
 <DocumentFragment>
-  <button
-    data-testid="test-btn"
-    type="button"
-  />
+  <div
+    class="Button"
+  >
+    <button
+      data-testid="test-btn"
+      type="button"
+    />
+  </div>
 </DocumentFragment>
 `;
