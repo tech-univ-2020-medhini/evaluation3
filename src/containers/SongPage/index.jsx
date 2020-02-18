@@ -8,7 +8,7 @@ const SongPage = (props) => {
   if (songsOfGenre !== undefined) {
     songs = songsOfGenre.map((song) => (
       // eslint-disable-next-line max-len
-      <SongCard id={song.id} title={song.name} artists={song.artists} imageLink={song.albumArtUrl} />
+      <SongCard id={song.id} title={song.name} artists={song.artists} imageLink={song.albumArtUrl} key={song.id} />
     ));
   }
 
