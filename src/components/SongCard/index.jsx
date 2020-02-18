@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import Button from '../Button';
 import bearerToken from '../../env';
+import './index.css';
 
 
 function SongCard(props) {
@@ -43,8 +44,9 @@ function SongCard(props) {
   };
 
   return (
-    <div className="SongCard">
+    <div className="song-card">
       <img src={imageLink} alt="/" />
+
       <p>
         {title}
       </p>
