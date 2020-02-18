@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SongCard from '../../components/SongCard';
+import './index.css';
 
 const SongPage = (props) => {
   const { songsOfGenre, genreName } = props;
@@ -18,7 +19,7 @@ const SongPage = (props) => {
       <p>
         {genreName}
       </p>
-      <div className="Songs-container">
+      <div className="songs-container">
         {songs}
       </div>
     </div>
