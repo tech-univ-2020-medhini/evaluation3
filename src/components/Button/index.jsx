@@ -5,10 +5,10 @@ import './index.css';
 const Button = (props) => {
   const [count, setCount] = useState(0);
   const { text, click } = props;
-  //   const countHandler = () => {
-  //     click();
-  //     setCount(count + 1);
-  //   };
+  const countHandler = () => {
+    click();
+    setCount(count + 1);
+  };
 
   return (
     <div className="Button">
