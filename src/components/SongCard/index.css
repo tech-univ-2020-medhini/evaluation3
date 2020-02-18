@@ -6,13 +6,17 @@
     height: 20rem;
     width: 20rem;
     font-size: small;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10%;
+    margin-top: 3rem;
 }
 .song:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 img{
+    align-self: center;
     max-height: 50%;
-    max-width: 100%;
+    max-width: 50%;
     margin: 1rem;
     border-radius: 50%;
   }
