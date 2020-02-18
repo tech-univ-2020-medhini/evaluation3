@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Link, Router,
-} from 'react-router-dom';
+
 import Button from '../Button';
 
 
@@ -12,7 +10,7 @@ function GenreCard(props) {
     <div className="GenreCard">
       <img src={imageLink} alt="/" />
       {/* <Link to="/songs?genre=:name"> */}
-      <Button text={name} onClick={getSongs} />
+      <Button text={name} click={getSongs} />
       {/* </Link> */}
     </div>
 

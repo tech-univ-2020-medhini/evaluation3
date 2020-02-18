@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the song cards should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="SongCard"
+  >
+    <img
+      alt="/"
+    />
+    <p />
+    <b />
+    <div
+      class="Button"
+    >
+      <button
+        data-testid="test-btn"
+        type="button"
+      >
+        0
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
