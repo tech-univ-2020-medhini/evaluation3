@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Button from '../Button';
+import bearerToken from '../../env';
 
 
 function SongCard(props) {
@@ -20,7 +21,7 @@ function SongCard(props) {
     const getLikes = async () => {
       const response = await axios.get(`/api/records/${id}/love`, {
         headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjhmOGI3Y2E0LTE3OWEtNGNlMS04OTg0LWM0OTNiZWNlZTVjNyIsIm5iZiI6MTU4MTk5ODYzOCwiZXhwIjoxNTgyMDg1MDM4LCJpYXQiOjE1ODE5OTg2MzgsImlzcyI6InJlY29yZHMtc2hlbGYuY29tIn0.NPzsD41a6JZzywL7rCkgyqkBNWnxx5echV5a7MFGK7M',
+          Authorization: bearerToken,
         },
       });
       setLikes(response.data.data.count);
@@ -33,7 +34,7 @@ function SongCard(props) {
         count: likes + 1,
       }, {
         headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjhmOGI3Y2E0LTE3OWEtNGNlMS04OTg0LWM0OTNiZWNlZTVjNyIsIm5iZiI6MTU4MTk5ODYzOCwiZXhwIjoxNTgyMDg1MDM4LCJpYXQiOjE1ODE5OTg2MzgsImlzcyI6InJlY29yZHMtc2hlbGYuY29tIn0.NPzsD41a6JZzywL7rCkgyqkBNWnxx5echV5a7MFGK7M',
+          Authorization: bearerToken,
         },
       });
       setLikes(likes + 1);
