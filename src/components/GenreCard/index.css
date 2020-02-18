@@ -4,6 +4,8 @@
     transition: 0.3s;
     height: 10rem;
     width: 8rem;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10%;
 }
 .genre-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
