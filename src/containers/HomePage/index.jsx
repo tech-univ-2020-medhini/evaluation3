@@ -32,6 +32,6 @@ const HomePage = (props) => {
 };
 HomePage.propTypes = {
   setSongsList: PropTypes.func.isRequired,
-
+  setIsSyncClicked: PropTypes.func.isRequired,
 };
 export default HomePage;

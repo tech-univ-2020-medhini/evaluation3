@@ -9,7 +9,7 @@ function SongCard(props) {
     id, title, artists, imageLink,
   } = props;
   let artistStr;
-  if (typeof artists === 'array') {
+  if (artists.isArray()) {
     artistStr = artists.join(' ');
   } else {
     artistStr = '';

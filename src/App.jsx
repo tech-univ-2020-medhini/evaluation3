@@ -15,8 +15,9 @@ function App() {
       <header className="header" />
       <div className="body">
         {
-          // eslint-disable-next-line no-nested-ternary
+          // eslint-disable-next-line
           isSyncClicked ? isGenreClicked ? (<SongPage songsOfGenre={songsOfGenre} genreName={genre} />)
+            // eslint-disable-next-line max-len
             : (<GenrePage setIsGenreClicked={setIsGenreClicked} songsList={songsList} setSongsOfGenre={setSongsOfGenre} setGenre={setGenre} />)
             : (<HomePage setIsSyncClicked={setIsSyncClicked} setSongsList={setSongsList} />)
         }

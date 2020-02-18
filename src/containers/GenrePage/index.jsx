@@ -39,5 +39,7 @@ const GenrePage = (props) => {
 GenrePage.propTypes = {
   songsList: PropTypes.arrayOf(PropTypes.object).isRequired,
   setSongsOfGenre: PropTypes.func.isRequired,
+  setIsGenreClicked: PropTypes.func.isRequired,
+  setGenre: PropTypes.func.isRequired,
 };
 export default GenrePage;
